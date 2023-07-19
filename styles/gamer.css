@@ -98,7 +98,7 @@
 
 /* Game Banner Section Style */
 .game-banner {
-    border: 1px solid #8758F1;
+    
     margin: 0 auto;
     max-width: 1000px;
     display: flex;
@@ -314,13 +314,7 @@
     color: red;
 }
 /* footer style */
-footer{
-    background-color: #0B0223;
-    max-width: 100%;
-   max-height: 100%;
-   align-items: center;
-   text-align: center;
-}
+
 .footer-title{
     font-size: 2.8rem;
     font-weight: 700;
@@ -328,13 +322,7 @@ footer{
     
 }
 
-.list > ul{
-    display: flex;
-    color: #FFF;
-}
-.list li{
-    list-style: none;
-}
+
 footer{
     background-color: #0b0223;
     margin: 50px 0 0 0;
