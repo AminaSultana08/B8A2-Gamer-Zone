@@ -221,13 +221,67 @@
 .online-games-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
-
-}
+    }
 .img img{
     width: 100%;
 }
+/* bonus part Online Games */
+.image{
+    position: relative;
+    width: 100%;
+    
+}
+.img_imgs{
+    display: block;
+    width: 100%;
+}
+.img__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0, 0 , 0.6);
+    color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.25s;
 
+
+}
+
+.img__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+
+}
+
+
+
+
+.img__overlay:hover{
+    opacity: 1;
+}
+.img__overlay > * {
+    transform: translateY(0);
+
+}
+
+
+ 
+.img_title{
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.img_description{
+    font-size: 1em;
+    margin-top: 0.25em;
+}
 
 /* play instantly section style */
 
@@ -310,8 +364,8 @@
 }
 
 .last-box:hover{
-    border: 2px solid red;
-    color: red;
+    border: 2px solid rgb(238, 17, 164);
+    color: rgb(238, 17, 164);
 }
 /* footer style */
 
@@ -390,6 +444,7 @@ padding-top: 30px;
 
     }
     
+   
 
 
 
