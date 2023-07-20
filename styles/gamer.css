@@ -98,25 +98,46 @@
 
 /* Game Banner Section Style */
 .game-banner {
+    background-image: url(../images/Group14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     
     margin: 0 auto;
     max-width: 1000px;
     display: flex;
     background-color: #fff;
+   
 
 }
+.pubg-bnr-img {
+    width: 100%;
+    height: 100%;
+}
+/* .bg-img{
+    background-image: url(../images/Group14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+/* .bg-img{
+     background-image: url(../images/Group14.png) ,  linear-gradient(rgba(140, 87, 238, 0.05), rgba(241, 68, 174, 0.05)) ;
+     background-blend-mode: lighten;      
+
+    /* width:50% ; */
+   
+    
+    /* background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%); */
+
+
 
 .game-banner-txt {
-
-
-
-    width: 50%;
+      width: 50%;
     text-align: center;
 
 
 }
 
 .card {
+   
     text-align: start;
     width: 400px;
     height: 200px;
@@ -152,12 +173,6 @@
 .game-banner-img {
 
     width: 50%;
-
-}
-
-.pubg-bnr-img {
-    width: 100%;
-    height: 100%;
 
 }
 
@@ -367,6 +382,11 @@
     border: 2px solid rgb(238, 17, 164);
     color: rgb(238, 17, 164);
 }
+
+.btn-primary:hover{
+    border: 2px solid rgb(241, 211, 232);
+
+}
 /* footer style */
 
 .footer-title{
@@ -424,10 +444,11 @@ padding-top: 30px;
     border-radius: 25px;
 } 
 /* responsive media queries */
+/* for small devices */
 @media screen and (max-width:400px) {
 
     .gamer-nav-container,
-    .play ,
+    .play ,  .card , .game-banner,
     .gamer-nav-items,
     .gamer-logo ,
     .online-games-img , .footer-box2 , .footer-box3 
@@ -440,12 +461,34 @@ padding-top: 30px;
         margin-top: 5px;
         align-items: center;
         margin-left: 30px;
-
+    }
+    .gamer-logo{
+        padding-left: 2px;
 
     }
+     .game-banner-txt{
+        padding-left:5px;
+        padding-right: 10px;
+
+     }
+     .online-games-img{
+       grid-template-columns:repeat(1 , 1fr);
+     }
+
+     .last-section1 , .last-section2  {
+         grid-template-columns: repeat(2,1fr); 
+       
+
+     }
+     
+}
+
+@media screen and (min-width:400px)  and (max-width:800px){
+
+    
+}
     
    
 
 
 
-}
